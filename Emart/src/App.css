@@ -1,30 +1,77 @@
-
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  
 }
-body{
+
+body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f5f5;
- 
 }
 
-.main-component
-{
+.main-component {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* vertically center the items */
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow for elevation */
 }
-.middle
-{
+
+.title h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.middle {
   display: flex;
-  text-align: center;
-  margin-top: 20px; 
+  align-items: center;
+  gap: 30px; /* space between nav and search */
 }
-.middle ul li
-{
+
+.middle ul {
+  display: flex;
+}
+
+.middle ul li {
   list-style: none;
-  display : inline-flex;
-  margin: 0 20px;
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+}
+
+.middle ul li:hover {
+  color: #ff5722; /* hover effect color */
+}
+
+.search input {
+  width:20rem;
+  height: 50px;
+  color: #2a2929;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right .sign,
+.right .cart {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.right .sign:hover,
+.right .cart:hover {
+  background-color: #ff5722;
+  color: white;
+  border-color: #ff5722;
 }
