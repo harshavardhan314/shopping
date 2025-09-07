@@ -8,3 +8,21 @@ body{
   font-family: 'Poppins', sans-serif;
   background-color: #f5f5f5;
 }
+
+.main-component
+{
+  display: flex;
+  justify-content: space-between;
+}
+.middle
+{
+  display: flex;
+  text-align: center;
+  margin-top: 20px; 
+}
+.middle ul li
+{
+  list-style: none;
+  display : inline-flex;
+  margin: 0 10px;
+}
